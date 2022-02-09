@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Redressed&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="form">
+        <h1>Ares Survey Form</h1>
+        <form action="afterSubmit.html">
+            <label for="name">Name* : </label>
+            <input type="text" name="myName" id="name" required placeholder="Enter your name">
+
+            <label for="personalEmail">Email Id* : </label>
+            <input type="email" name="personalEmail" id="personalEmail" required placeholder="Enter your Personal Email">
+
+            <label for="CollegeEmail">NSUT Email Id* : </label>
+            <input type="email" name="CollegeEmail" id="CollegeEmail" placeholder="Enter your NSUT Email">
+
+            <div>
+                <label for="Study_Year">Year of Study* : </label>
+                Ist year <input type="radio" name="Study_Year" class="Study_Year" required>
+                IInd year <input type="radio" name="Study_Year" class="Study_Year" required>
+            </div>
+
+            <label for="rollNo">Roll No.* : </label>
+            <input type="text" name="rollNo" id="rollNo" required placeholder="Enter your Roll No.">
+
+            <label for="age">Age(optional) : </label>
+            <input type="number" placeholder="Enter your Age">
+
+            <label for="Position">Which option best describes your current role?* : </label>
+            <select name="Positon" id="Position" required>
+                <option value="" selected>Select current role</option>
+                <option value="Web">Web Development</option>
+                <option value="Graphic">Graphic Design</option>
+                <option value="Blender">3D /Blender</option>
+                <option value="Video">Video Editing</option>
+            </select>
+
+            <label for="selection">What is that one thing which excites you most about ARES?* : </label>
+            <input type="text" name="selection" id="selection" required>
+            <label for="">Any comments or suggestions?(optional) : </label>
+            <textarea name="" id="" cols="70" rows="10" placeholder="Enter your Comment here..."></textarea>
+            <h6>* fields are mandatory</h6>
+            <input type="submit" value="Submit" class="btn">
+            <input type="reset" value="Reset" class="btn">
+        </form>
+    </div>
+</body>
+
+</html>
